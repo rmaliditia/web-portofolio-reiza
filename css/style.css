@@ -48,7 +48,6 @@ nav {
   position: fixed;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 0.263);
-  /* background-color: #7c1919; */
   backdrop-filter: blur(4px);
   top: 0;
   left: 0;
@@ -908,7 +907,7 @@ nav {
 }
 
 .titleProject {
-  font-size: 3.3rem;
+  font-size: 2.3rem;
   grid-area: title;
   text-align: center;
   font-weight: 700;
@@ -1126,7 +1125,7 @@ nav {
 
 .textcontact {
   text-align: center;
-  font-size: 3.3rem;
+  font-size: 2.3rem;
   font-weight: 700;
 }
 
@@ -1781,22 +1780,22 @@ footer {
     }
 
     .navbarMenu-bottom a {
-      color: white; /* Warna default ikon */
-      text-decoration: none; /* Hilangkan garis bawah pada link */
-      font-size: 1.2rem; /* Ukuran font ikon */
-      transition: all 0.3s ease; /* Efek transisi saat hover */
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
     }
 
     .navbarMenu-bottom a:hover {
-      color: #bda146; /* Warna ikon saat di-hover */
+      color: #bda146;
     }
 
     .navbarMenu-bottom a.active {
-      color: var(--gold-yellow); /* Warna ikon aktif */
+      color: var(--gold-yellow);
     }
 
     .navbarMenu-bottom i {
-      display: block; /* Pastikan ikon terpisah dan terpusat */
+      display: block;
     }
 
     /* Navbar Bottom End */
@@ -2171,22 +2170,22 @@ footer {
     }
 
     .navbarMenu-bottom a {
-      color: white; /* Warna default ikon */
-      text-decoration: none; /* Hilangkan garis bawah pada link */
-      font-size: 1.2rem; /* Ukuran font ikon */
-      transition: all 0.3s ease; /* Efek transisi saat hover */
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: all 0.3s ease;
     }
 
     .navbarMenu-bottom a:hover {
-      color: var(--gold-yellow); /* Warna ikon saat di-hover */
+      color: var(--gold-yellow);
     }
 
     .navbarMenu-bottom a.active {
-      color: var(--gold-yellow); /* Warna ikon aktif */
+      color: var(--gold-yellow);
     }
 
     .navbarMenu-bottom i {
-      display: block; /* Pastikan ikon terpisah dan terpusat */
+      display: block;
     }
 
     /* Navbar Bottom End */
@@ -2452,6 +2451,19 @@ footer {
     /* Education End */
 
     /* Project Start */
+    .sectionProject {
+      box-sizing: border-box;
+      padding: 15% 5.5% 0 5.5%;
+    }
+
+    .titleProject {
+      font-size: 2.4rem;
+      grid-area: title;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
     .contentProject {
       display: grid;
       grid-template-areas:
@@ -2478,6 +2490,10 @@ footer {
     /* Contact Start */
     .contactsection {
       padding: 12.6% 5.5% 0 5.5%;
+    }
+
+    .textcontact {
+      font-size: 2.4rem;
     }
 
     .contactform form {
@@ -2511,7 +2527,7 @@ footer {
       text-align: center;
     }
     /* Contact End */
-    /* Footer Start */
+
     /* Footer Start */
     footer {
       padding: 1rem 5, 5rem;
@@ -2524,7 +2540,6 @@ footer {
     .footer-bottom {
       margin: 0;
     }
-    /* Footer End */
     /* Footer End */
   }
   /* Mobile 425px End */
