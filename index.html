@@ -5,374 +5,599 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="This Is My Website Portfolio" />
     <meta name="author" content="Reiza Mohamad Aliditia" />
-    <title>Port Reiza Mohamad Aliditia</title>
+    <title>Portofolio | Reiza Mohamad Aliditia</title>
+    <!-- My Css -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Font Awesome Icon Start -->
     <script
       src="https://kit.fontawesome.com/b864ad59f7.js"
       crossorigin="anonymous"
     ></script>
-
-<!-- AOS -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-
-
-<!-- Css -->
-    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- Navbar Start -->
-
     <header>
+      <!-- Navigation Start -->
       <nav class="navigation">
-        <!-- Logo Reiza Start -->
-
-        <div class="logo">
-          <h1 class="reiza">reizamohamad.a</h1>
+        <div class="logo"><h1>reizamohamad.a</h1></div>
+        <div class="navbarMenu" id="navbarMenu">
+          <a href="#" class="active">Home</a>
+          <a href="#about" class="about">About</a>
+          <a href="#skills" class="skills">Skills</a>
+          <a href="#education" class="skills">Education</a>
+          <a href="#project" class="project">Project</a>
+          <a href="#contact" class="contact">Contact</a>
         </div>
+        <div class="navbarIcon">
+          <!-- Switch Mode Start -->
 
-        <!-- Logo Reiza End -->
+          <div class="container">
+            <label for="switch" class="toggle">
+              <input type="checkbox" class="input" id="switch" />
 
-        <!-- Navbar-Nav Start -->
+              <div class="icon icon--sun">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="28"
+                  height="28"
+                >
+                  <path
+                    d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z"
+                  ></path>
+                </svg>
+              </div>
 
-<div class="navbar-nav" id="navbarNav">
-  <a href="#" class="active">Home</a>
-  <a href="#about" class="about">About</a>
-  <a href="#skills" class="skills">Skills</a>
-  <a href="#project" class="project">Project</a>
-  <a href="#contact" class="contact-nav">Contact</a>
-</div>
+              <div class="icon icon--moon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  width="27"
+                  height="27"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </div>
+            </label>
+          </div>
 
-        <!-- Navbar-Nav End -->
+          <!-- Switch Mode End -->
 
-        <div class="navbar-icon">
-          <button type="#button" class="downloadcv">
-            <a href="cv/cv.jpg" download="cv.jpg"
-              >Download CV <i class="fa-solid fa-file-arrow-down fa-lg"></i
+          <button type="button" class="contactMe">
+            <a href="#contact"
+              ><span>Let's talk </span><i class="fa-solid fa-message fa-lg"></i
             ></a>
           </button>
-          <!-- <a href="menu" id="menu"><i class="fa-solid fa-bars"></i></a> -->
         </div>
       </nav>
+      <!-- Navigation End -->
+      <!-- Navigation Bottom Start -->
+      <div class="navbarMenu-bottom">
+        <a href="#" class="active"><i class="fa-solid fa-house fa-lg"></i></a>
+        <a href="#about" class="about"
+          ><i class="fa-solid fa-user fa-lg"></i
+        ></a>
+        <a href="#skills" class="skills"
+          ><i class="fa-solid fa-code fa-lg"></i
+        ></a>
+        <a href="#education" class="education"
+          ><i class="fa-solid fa-school fa-lg"></i></a>
+        <a href="#project" class="project"
+          ><i class="fa-solid fa-file fa-lg"></i
+        ></a>
+        <a href="#contact" class="contact"
+          ><i class="fa-solid fa-message fa-lg"></i
+        ></a>
+      </div>
+      <!-- Navigation Bottom End -->
     </header>
 
-    <!-- Navbar End -->
-
     <!-- Homepage Start -->
-
-    <section class="homepage" id="home">
-      <main class="content-home">
+    <section class="homepage">
+      <div class="content-home">
         <!-- Text Group Start -->
-        <div class="text-group-home" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300">
-          <h1 class="hi">Hello World <span>👋🏻</span></h1>
-          <h1 class="name">I'm Reiza Mohamad Aliditia</h1>
+        <div class="textGroup" data-aos="fade-right" data-aos-duration="800">
+          <h1 class="hi">Hello World <span>👋🏿</span></h1>
+          <h1 class="name">
+            I'm Reiza <span class="lastLengkap">Mohamad Aliditia</span
+            ><span class="lastSingkat">MA</span>
+          </h1>
           <h1 class="intro">
             <span class="intro1"></span><span class="|">|</span>
           </h1>
-          
-          <!-- <h1 class="intro">|
-            <span class="aspiring"></span>
-          </h1> -->
           <p class="mydesk">
             I'm currently learning to become a web developer with a focus on
             HTML, CSS, and JavaScript. If you would like to discuss or have any
-            questions, feel free to contact me. Thank you for visiting!
+            questions, feel free to contact me.
+            <span>Thank you for visiting!</span>
           </p>
           <!-- Contact Button Start -->
-          <button type="button" class="contact">
-            <a href="#contact">Contact Me <i class="fa-solid fa-address-book"></i></a>
+          <button type="button" class="downloadCv">
+            <a href="cv/cv.png" download="cv.png"
+              >Download CV <i class="fa-solid fa-file-arrow-down fa-lg"></i
+            ></a>
           </button>
           <!-- Contact Button End -->
         </div>
         <!-- Text Group End -->
-        <!-- My Photo Start -->
-        <div class="myphoto" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
-          <img src="img/myphoto.svg" alt="Reiza Mohamad Aliditia" class="photo" />
+        <!-- Image Home Start -->
+        <div
+          class="imgHome"
+          data-aos="fade-left"
+          data-aos-duration="800"
+          data-aos-delay="300"
+        >
+          <img src="img/myphoto.png" alt="Reiza Mohamad Aliditia Photo" />
         </div>
-        <!-- My Photo End -->
+        <!-- Image Home End -->
+        <div class="scrollDown">
+          <a href="#about">
+            Scroll Down For More <i class="fa-solid fa-arrow-down fa-lg"></i>
+          </a>
+        </div>
       </main>
     </section>
-
     <!-- Homepage End -->
 
     <!-- About Start -->
-
-    <section id="about" class="sectionabout">
-      <h1 class="about" data-aos="fade-up" data-aos-duration="800" data-aos-anchor="#about">About Me</h1>
-      <div class="content-wrapper">
-        <div class="myphoto2">
-          <img src="img/myphoto2.svg" alt="My Photo 2" />
+    <section id="about" class="sectionAbout">
+      <div class="container">
+        <!-- Title About -->
+        <div class="titleAbout">
+          <h1>About Me</h1>
         </div>
-        <div class="text-group-about">
-          <h2 class="hi2">Hello! I'm Reiza Mohamad Aliditia</h2>
+
+        <!-- Image About Start -->
+
+        <div class="imageAbout">
+          <img src="img/myphoto22.png" alt="My Photo" />
+        </div>
+
+        <!-- Image About End -->
+        <!-- Text About Start -->
+
+        <div class="textAbout">
+          <!-- Deskripsi Start -->
+          <h2 class="hi2">
+            Hello! I'm <span class="nameAbout">Reiza Mohamad Aliditia</span>
+          </h2>
           <h2 class="intro2">
-            a UI/UX Designer and Aspiring Frontend Developer based in Bandung
+            A <span>UI/UX Designer</span> and <span>Frontend Developer</span
+            ><br />based in Bandung
           </h2>
-          <h2 class="mydesk2">
-            Hello! I am Reiza Mohamad Aliditia, an Informatics Engineering
-            student at Universitas Pasundan and a UI/UX Designer and Aspiring
-            Frontend Developer from Bandung. I create functional and visually
-            appealing websites with expertise in HTML, CSS, and JavaScript. I
-            believe design can enhance user experiences. Outside of studies, I
-            enjoy exploring new design trends and contributing to open-source
-            projects.
-          </h2>
-          <div class="statistics">
-            <div class="statistics-item">
-              <a href="." class="iconst"
-                ><i class="fa-solid fa-calendar-days fa-4x"></i
-              ></a>
-              <h2>Experience</h2>
-              <h1>100</h1>
+          <p class="mydesk2">
+            An Informatics Engineering student at Universitas Pasundan,
+            specializing in creating functional and visually appealing websites
+            with expertise in HTML, CSS, and JavaScript. Passionate about using
+            design to enhance user experiences, I enjoy exploring the latest
+            design trends and contributing to open-source projects.
+          </p>
+          <!-- Deskripsi End -->
+          <!-- Statistik Start -->
+
+          <div class="containerImDoing">
+            <div class="titleImDoing">
+              <h2>What I'm Doing?</h2>
             </div>
-            <div class="statistics-item">
-              <a href="." class="iconst"
-                ><i class="fa-solid fa-globe fa-4x"></i
-              ></a>
-              <h2>Language</h2>
-              <h1>100</h1>
-            </div>
-            <div class="statistics-item">
-              <a href="." class="iconst"
-                ><i class="fa-solid fa-list-check fa-4x"></i
-              ></a>
-              <h2>Project</h2>
-              <h1>100</h1>
+            <div class="imDoing">
+              <!-- UI UX Start -->
+              <div class="uiuxDesign">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="128"
+                  xml:space="preserve"
+                >
+                  <path
+                    fill="#282D33"
+                    d="M113.768 108.4h-4V47.361c0-.711-.567-1.289-1.265-1.289H92.895v-4h15.608c2.903 0 5.265 2.373 5.265 5.289V108.4zM18.231 108.4h-4V47.36c0-2.917 2.361-5.289 5.263-5.289h17.837v4H19.494c-.696 0-1.263.578-1.263 1.289v61.04z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M105.664 102.529H92.895v-4h8.769V53.85h-8.769v-4h12.769zM37.331 102.529H22.336V49.85h14.995v4H26.336v44.679h10.995zM118.563 119.227H9.436c-3.711 0-8.146-3.256-8.639-3.627L0 115v-8.904h128V115l-.798.6c-.493.371-4.929 3.627-8.639 3.627zM4 112.961c1.575 1.039 3.925 2.266 5.436 2.266h109.126c1.511 0 3.861-1.225 5.438-2.266v-2.865H4v2.865z"
+                  />
+                  <g>
+                    <path
+                      fill="#282D33"
+                      d="M64.896 106.186h-3.999V13.111H45.793v93.075h-4V9.111h23.103z"
+                    />
+                    <path
+                      fill="#282D33"
+                      d="M53.713 17.276h9.184v4h-9.184zM57.952 25.441h4.945v4h-4.945zM53.713 33.607h9.184v4h-9.184zM57.952 41.772h4.945v4h-4.945zM53.713 49.938h9.184v4h-9.184zM57.952 58.104h4.945v4h-4.945zM53.713 66.27h9.184v4h-9.184zM57.952 74.436h4.945v4h-4.945zM53.713 82.602h9.184v4h-9.184zM57.952 90.766h4.945v4h-4.945zM53.713 98.932h9.184v4h-9.184z"
+                    />
+                    <g>
+                      <path
+                        fill="#282D33"
+                        d="M88.134 29.761h-4v-2.178l-5.611-10.389-5.606 10.389v2.178h-4v-3.189l9.606-17.799 9.611 17.799z"
+                      />
+                      <path
+                        fill="#282D33"
+                        d="M72.919 106.502h-4l.002-78.528H88.13v78.528h-4V31.974H72.921z"
+                      />
+                      <path fill="#282D33" d="M76.523 30.751h4v75.75h-4z" />
+                    </g>
+                  </g>
+                </svg>
+                <h3>UI/UX Design</h3>
+              </div>
+
+              <!-- UI UX End -->
+              <!-- Web Design Start -->
+              <div class="webDesign">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="128"
+                  xml:space="preserve"
+                >
+                  <path
+                    fill="#282D33"
+                    d="M118.48 113.667H0V27.8h118.48v85.867zm-114.48-4h110.48V31.8H4v77.867z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M109.184 79.902H9.297v-42.93h99.887v7.289h-4v-3.289H13.297v34.93h91.887v-3.257h4zM35.061 88.773v11.931H12.91V88.773h22.151m3.937-3.936H8.974v19.804h30.024V84.837zM70.314 88.773v11.931H48.163V88.773h22.151m3.938-3.936H44.227v19.804h30.025V84.837zM105.57 88.773v11.931H83.418V88.773h22.152m3.937-3.936H79.48v19.804h30.025l.002-19.804zM118.48 31.8H0V14.333h118.48V31.8zM4 27.8h110.48v-9.467H4V27.8z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M7.23 20.968h4.344v4H7.23zM14.75 20.968h4.348v4H14.75zM22.272 20.968h4.348v4h-4.348zM37.667 68.239h-2.11L15.782 58.196l19.775-10.045h2.113v4h-1.155l-11.9 6.045 11.9 6.043h1.152z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M114.79 51.645v13.103H39.397l-.001-13.103h75.394m3.937-3.937H35.459l.002 20.976h83.266V47.708z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M39.858 56.195h77.355v4H39.858zM124.552 68.318h-6.495v-4h5.937l.004-12.247h-5.94v-4h6.495c1.899 0 3.445 1.701 3.445 3.792L128 64.536c-.006 2.123-1.521 3.782-3.448 3.782z"
+                  />
+                </svg>
+                <h3>Web Design</h3>
+              </div>
+              <!-- Web Design End -->
+              <!-- Web Development Start -->
+              <div class="webDevelopment">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="128"
+                  height="128"
+                  xml:space="preserve"
+                >
+                  <path
+                    fill="#282D33"
+                    d="M44.876 120.575C20.145 120.575.024 100.247.024 75.26c0-24.988 20.121-45.317 44.852-45.317v4c-22.526 0-40.852 18.535-40.852 41.317 0 22.781 18.326 41.315 40.852 41.315 17.986 0 33.663-11.658 39.01-29.011l3.822 1.178c-5.866 19.04-23.079 31.833-42.832 31.833z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M53.604 34.847a40.755 40.755 0 0 0-8.715-.941v-4c3.226 0 6.446.349 9.573 1.034l-.858 3.907z"
+                  />
+                  <path
+                    fill="#282D33"
+                    d="M44.889 120.61c-15.034 0-26.811-19.922-26.811-45.354 0-25.431 11.777-45.352 26.811-45.352v4c-12.578 0-22.811 18.551-22.811 41.352 0 22.803 10.233 41.354 22.811 41.354 11.08 0 20.759-14.986 22.515-34.86l3.984.352c-1.971 22.313-13.116 38.508-26.499 38.508z"
+                  />
+                  <path fill="#282D33" d="M42.888 31.905h4v86.703h-4z" />
+                  <path
+                    fill="#282D33"
+                    d="M84.982 92.537H3.397l-.485-1.303C.98 86.041 0 80.666 0 75.257c0-5.417.982-10.794 2.918-15.983l.486-1.301h52.352v4H6.204A41.438 41.438 0 0 0 4 75.257c0 4.481.739 8.941 2.2 13.28h78.782v4z"
+                  />
+                  <g>
+                    <path
+                      fill="#282D33"
+                      d="M95.591 85.718H81.588l-.825-9.991a29.671 29.671 0 0 1-7.146-3.182l-7.304 6.246-9.881-9.994 6.397-7.648a30.191 30.191 0 0 1-2.833-7.389l-9.53-.803V38.849l9.883-.834a30.321 30.321 0 0 1 3.163-7.25L57.34 23.39l9.887-9.992 7.573 6.479a29.576 29.576 0 0 1 7.281-2.851l.794-9.636H96.88l.824 9.994a29.611 29.611 0 0 1 7.146 3.182l7.302-6.246 9.886 9.994-6.401 7.646a30.343 30.343 0 0 1 2.834 7.392l9.529.8v14.109l-9.882.832a30.283 30.283 0 0 1-3.164 7.252l6.173 7.373-9.886 9.993-7.576-6.478a29.605 29.605 0 0 1-7.279 2.849l-.795 9.636zm-10.32-4h6.636l.738-8.948 1.49-.287a25.672 25.672 0 0 0 8.695-3.394l1.242-.769 6.939 5.935 4.71-4.761-5.74-6.855.838-1.248a26.307 26.307 0 0 0 3.778-8.634l.335-1.409 9.068-.764V43.83l-8.856-.745-.282-1.495a26.42 26.42 0 0 0-3.363-8.811l-.74-1.224 5.877-7.019-4.708-4.76-6.778 5.798-1.266-.869a25.718 25.718 0 0 0-8.527-3.812l-1.403-.341-.755-9.164H86.56l-.737 8.951-1.491.287a25.58 25.58 0 0 0-8.694 3.394l-1.243.77-6.939-5.936-4.709 4.759 5.739 6.857-.838 1.248a26.375 26.375 0 0 0-3.777 8.633l-.335 1.407-9.067.766v6.755l8.86.746.281 1.496a26.244 26.244 0 0 0 3.361 8.803l.742 1.223-5.876 7.024 4.707 4.76 6.778-5.796 1.266.869a25.749 25.749 0 0 0 8.526 3.812l1.402.341.755 9.161z"
+                    />
+                  </g>
+                  <g>
+                    <path
+                      fill="#282D33"
+                      d="M89.234 63.956c-9.504 0-17.235-7.807-17.235-17.401 0-9.596 7.731-17.402 17.235-17.402 9.503 0 17.234 7.807 17.234 17.402.001 9.594-7.731 17.401-17.234 17.401zm0-30.804c-7.298 0-13.235 6.012-13.235 13.402s5.938 13.401 13.235 13.401 13.234-6.012 13.234-13.401c.001-7.39-5.936-13.402-13.234-13.402z"
+                    />
+                  </g>
+                </svg>
+                <h3>Web Development</h3>
+              </div>
+              <!-- Web Development End -->
             </div>
           </div>
+          <!-- Statistik End -->
         </div>
 
-        <!-- Education Start -->
-        <div class="education">
-          <h3>
-            <span><i class="fa-solid fa-school fa"></i></span> Education
-          </h3>
-          <div class="smk">
-            <div class="logobw">
-              <img src="img/bwlogo.png" alt="Logo SMK Bina Warga" />
-            </div>
-            <div>
-              <h4>SMK Bina Warga Bandung</h4>
-              <p><i class="fa-solid fa-calendar-days fa-sm"></i> Multimedia, 2021-2024</p>
-            </div>
-          </div>
-          <div class="univ">
-            <div class="logounpas">
-              <img src="img/unpaslogo.png" alt="Logo Universitas Pasundan" />
-            </div>
-            <div>
-              <h4>Universitas Pasundan</h4>
-              <p><i class="fa-solid fa-calendar-days fa-sm"></i> Informatics Engineering, 2024-Present</p>
-            </div>
-          </div>
-        </div>
-        
-          <!-- Education End -->
-        </div>
+        <!-- Text About End -->
       </div>
     </section>
-
     <!-- About End -->
 
-      <!-- Skill Icon Start -->
-      <section id="skills" class="sectionskills">
-      <div class="skills">
-        <h1 class="textskills">Skills</h1>
-        <div class="skillsicon">
-          <div class="htmlicon">
-            <img src="img/html5-original.svg" alt="HTML5 Icon">
-            <h2>HTML</h2>
-          </div>
-          <div class="cssicon">
-          <img src="img/css3-original.svg" alt="CSS3 Icon">
+<!-- Skills Start -->
+<section id="skills" class="sectionSkills">
+  <h1 class="titleSkills">My Skills</h1>
+  <div class="containerSkills">
+    <div class="contentSkills">
+      <div class="skillsToggle">
+        <button class="toggleBtn active" data-target="techstack">Tech Stack <i class="fa-solid fa-code"></i></button>
+        <button class="toggleBtn" data-target="tools">Tools <i class="fa-solid fa-screwdriver-wrench"></i></button>
+      </div>
+      <!-- Tech Stack Icons -->
+      <div class="techstack active">
+        <div class="skillIcon">
+          <img src="img/skill/html5-original.svg" alt="HTML5 Icon">
+          <h2>HTML</h2>
+          <p>Bahasa standar untuk membuat struktur dan konten pada halaman web, seperti teks, gambar, atau video.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/skill/javascript-original.svg" alt="JS Icon">
+          <h2>JavaScript</h2>
+          <p>Bahasa pemrograman yang menambahkan interaktivitas pada website, seperti validasi form, animasi, atau efek dinamis.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/skill/css3-original.svg" alt="CSS3 Icon">
           <h2>CSS</h2>
-          </div>
-          <div class="javaicon">
-            <img src="img/javascript-original.svg" alt="JS Icon">
-            <h2>JavaScript</h2>
-          </div>
-          <div class="phpicon">
-            <img src="img/php-original.svg" alt="PHP Icon">
-            <h2>PHP</h2>
-          </div>
-          <div class="tsicon">
-            <img src="img/typescript-original.svg" alt="TS Icon">
-            <h2>TypeScript</h2>
-          </div>
-          <div class="talwindicon">
-            <img src="img/tailwindcss-original.svg" alt="Talwind CSS Icon">
-            <h2>Talwind CSS</h2>
-          </div>
+          <p>Digunakan untuk mendesain tampilan HTML, termasuk warna, tata letak, font, dan animasi.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/skill/typescript-original.svg" alt="TS Icon">
+          <h2>TypeScript</h2>
+          <p>Superset dari JavaScript yang mendukung tipe data statis, membuat kode lebih mudah dikelola dan di-debug.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/skill/php-original.svg" alt="PHP Icon">
+          <h2>PHP</h2>
+          <p>Bahasa pemrograman sisi server yang digunakan untuk membuat aplikasi web dinamis, seperti login, database, dan lainnya.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/skill/tailwindcss-original.svg" alt="Tailwind CSS Icon">
+          <h2>Tailwind CSS</h2>
+          <p>Framework CSS yang berbasis utility-first, memungkinkan Anda mendesain langsung melalui kelas-kelas CSS yang sudah disediakan.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/skill/bootstrap-original.svg" alt="Bootstrap Icon">
+          <h2>Bootstrap</h2>
+          <p>Framework CSS untuk mempercepat pengembangan desain web dengan komponen siap pakai seperti grid, tombol, dan navbar.</p>
         </div>
       </div>
-      </section>
-      <!-- Skill Icon End -->
-
-    <!-- Project Start -->
-    <section id="project" class="projectsection">
-      <h1 class="text-project">My Project</h1>
-      <div class="contentproject">
-        <div class="pro1">
-          <div class="proimg1">
-            <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
-            <img src="img/project1.png" alt="Project 1" />
-          </div>
-          <div class="textproject1">
-            <h1>Gempita Landing Page</h1>
-          </div>
-          <div class="technologies1">
-            <h2 class="techhtml"><img src="img/html5-original.svg" alt=""> HTML</h2>
-            <h2 class="techcss"><img src="img/css3-original.svg" alt=""> CSS</h2>
-            <h2 class="techjs"><img src="img/javascript-original.svg" alt=""> Java Script</h2>
-          </div>
-          <div class="deskpro1">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              deserunt rerum obcaecati quae repellat tempora maxime id nobis
-              consectetur aspernatur adipisci aliquid corporis incidunt, beatae
-              possimus quos quaerat cumque vero? Soluta qui in vitae fugit
-              recusandae vero doloribus asperiores nobis ratione sed, hic
-              distinctio, esse error ducimus adipisci similique inventore?
-            </p>
-          </div>
-            <button type="button" class="view1">
-              <a href="#view1" class="view1-link">Preview <i class="fa-solid fa-eye fa-lg"></i></a>
-          </button>
+      
+      <!-- Tools Icons -->
+      <div class="tools">
+        <div class="skillIcon">
+          <img src="img/tech/androidstudio-original.svg" alt="Android Studio Icon">
+          <h2>Android Studio</h2>
+          <p>IDE resmi untuk mengembangkan aplikasi Android, menyediakan emulator, debugger, dan alat pengujian.</p>
         </div>
-
-        <div class="pro2">
-          <div class="proimg2">
-            <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
-            <img src="img/project2.png" alt="Project 2" />
-          </div>
-          <div class="textproject2">
-            <h1>Zafari Landing Page</h1>
-          </div>
-          <div class="technologies2">
-            <h2 class="techhtml"><img src="img/html5-original.svg" alt=""> HTML</h2>
-            <h2 class="techcss"><img src="img/css3-original.svg" alt=""> CSS</h2>
-          </div>
-          <div class="deskpro2">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              deserunt rerum obcaecati quae repellat tempora maxime id nobis
-              consectetur aspernatur adipisci aliquid corporis incidunt, beatae
-              possimus quos quaerat cumque vero? Soluta qui in vitae fugit
-              recusandae vero doloribus asperiores nobis ratione sed, hic
-              distinctio, esse error ducimus adipisci similique inventore?
-            </p>
-          </div>
-          <button type="button" class="view2">
-            <a href="#view2" class="view2-link">Preview <i class="fa-solid fa-eye fa-lg"></i></a>
-        </button>
+        <div class="skillIcon">
+          <img src="img/tech/git-original.svg" alt="Git Icon">
+          <h2>Git</h2>
+          <p>Sistem kontrol versi yang melacak perubahan pada kode, memungkinkan pengembang bekerja secara kolaboratif.</p>
         </div>
-
-        <div class="pro3">
-          <div class="proimg3">
-            <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
-            <img src="img/project3.png" alt="Project 3" />
-          </div>
-          <div class="textproject3">
-            <h1>Three Iconic Spider-Man in Comic and Film...</h1>
-          </div>
-          <div class="technologies3">
-            <h2 class="techhtml"><img src="img/html5-original.svg" alt=""> HTML</h2>
-            <h2 class="techcss"><img src="img/css3-original.svg" alt=""> CSS</h2>
-          </div>
-          <div class="deskpro3">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-              deserunt rerum obcaecati quae repellat tempora maxime id nobis
-              consectetur aspernatur adipisci aliquid corporis incidunt, beatae
-              possimus quos quaerat cumque vero? Soluta qui in vitae fugit
-              recusandae vero doloribus asperiores nobis ratione sed, hic
-              distinctio, esse error ducimus adipisci similique inventore?
-            </p>
-          </div>
-          <button type="button" class="view3">
-            <a href="#view3" class="view3-link">Preview <i class="fa-solid fa-eye fa-lg"></i></a>
-        </button>
+        <div class="skillIcon">
+          <img src="img/tech/figma-original.svg" alt="Figma Icon">
+          <h2>Figma</h2>
+          <p>Alat desain berbasis web untuk membuat prototipe UI/UX, memungkinkan kolaborasi real-time dengan tim.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/tech/canva-original.svg" alt="Canva Icon">
+          <h2>Canva</h2>
+          <p>Alat desain grafis berbasis online untuk membuat konten visual seperti poster, logo, dan presentasi secara cepat dan mudah.
+          </p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/tech/github-original.svg" alt="GitHub Icon">
+          <h2>GitHub</h2>
+          <p>Platform hosting untuk proyek yang menggunakan Git, mendukung kolaborasi dan berbagi kode secara online.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/tech/illustrator-plain.svg" alt="Adobe Illustrator Icon">
+          <h2>Adobe Illustrator</h2>
+          <p>Perangkat lunak untuk membuat desain berbasis vektor, seperti logo, ikon, atau ilustrasi.</p>
+        </div>
+        <div class="skillIcon">
+          <img src="img/tech/vscode-original.svg" alt="Visual Studio Code Icon">
+          <h2>VS Code</h2>
+          <p>Editor kode yang ringan namun powerful, mendukung banyak bahasa pemrograman dan fitur seperti debugging.</p>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="deskSkills">
+    <h2>Teck Stack & Tools</h2>
+    <h3>These are the tech stacks and tools that have been part of my learning and development journey.</h3>
+  </div>
+</section>
 
-    <!-- Project End -->
-
-    <!-- Contact Start -->
-    <section id="contact" class="contactsection">
-      <h1 class="textcontact">Contact</h1>
-      <div class="sec-contact">
-        <div class="contactform">
-          <form action="mailto:aliditia123@gmail.com" method="post" enctype="text/plain">
-            <h2>Send A Message</h2>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-mail Address</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis ratione, omnis perspiciatis ut fugit!</h3>
-
-            <button type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-        </div>
-
-        <div class="contactinfo">
-          <h2>Get in Touch</h2>
-          <h3 class="desk-con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae voluptates temporibus quasi! Facilis minima explicabo rerum nobis quod? Ea distinctio magni sed. Alias architecto molestiae natus dolore facilis reprehenderit.</h3>
-          <br>
-          <div class="address">
-            <img src="img/location.svg" alt="Location Icon">
-            <span>
-            <h4>Address</h4>
-            <p>Bandung, Indonesia</p>
+<!-- Education Start -->
+<section id="education" class="sectionEducation">
+  <h1 class="titleEducation">Education</h1>
+  <div class="contentEducation">
+    <ul>
+      <li>
+        <div class="container">
+          <img style="width: 55px;" src="img/bwlogo.png" alt="Logo SMK Bina Warga" />
+          <span>
+            <h4>SMK Bina Warga Bandung</h4>
+            <h5><i class="fa-solid fa-calendar-days fa-sm"></i> Multimedia, 2021-2024</h5>
           </span>
-          </div>
-          <div class="phonenumber">
-            <img src="img/phone.svg" alt="Phone Icon">
-            <span>
-            <h4>Phone Number</h4>
-            <p>+62-812-2174-1456</p>
-            </span>
-          </div>
-          <div class="email">
-            <img src="img/mail.svg" alt="E-mail Icon"></img>
-              <span>
-              <h4>E-mail</h4>
-              <p>aliditia123@gmail.com</p>
-            </span>
-          </div>
-          <br>
-          <hr>
-          <br>
-          <div class="followus">
-            <h4 class="txt-followus">Follow Us:</h4>
-            <div class="medsosicon">
-              <a href="https://wa.me/+6281221741456" target="_blank" class="wa"><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
-              <a href="https://instagram.com/rmaliditia_" target="_blank" class="ig"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
-              <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
-              <a href="https://linkedin.com/in/ReizaMohamadAliditia" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a>
-            </div>
-          </div>
+        </div>
+        <span class="circle"><i class="fa-solid fa-school fa-lg"></i></span>
+        <p>A graduate of SMK Binawarga in the Multimedia program, focusing on mastering graphic design, animation, video editing, and digital media as a foundation for developing skills in the creative technology field.</p>
+      </li>
+      <li>
+        <div class="container">
+          <img style="width: 55px;" src="img/unpaslogo.png" alt="Logo SMK Bina Warga" />
+          <span>
+            <h4>Universitas Pasundan</h4>
+            <h5><i class="fa-solid fa-calendar-days fa-sm"></i> Informatika, 2024-Present</h5>
+          </span>
+        </div>
+        <span class="circle"><i class="fa-solid fa-school-flag fa-lg"></i></span>
+        <p>Currently pursuing a degree at Universitas Pasundan in the Informatics Engineering program. Specializing in programming, software development, and information technology to support a professional career in the IT field.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- Education End -->
+
+<!-- Project Start -->
+<section id="project" class="sectionProject">
+  <h1 class="titleProject">My Project</h1>
+  <div class="contentProject">
+    <div class="project1">
+      <div class="projectImg1">
+        <img src="img/project1.png" alt="Project 1" />
+      </div>
+        <h1 class="textProject1">Gempita Landing Page</h1>
+      <div class="technologies1">
+        <h2 class="techhtml"><img src="img/skill/html5-original.svg" alt=""> HTML</h2>
+        <h2 class="techcss"><img src="img/skill/css3-original.svg" alt=""> CSS</h2>
+        <h2 class="techjs"><img src="img/skill/javascript-original.svg" alt=""> Java Script</h2>
+      </div>
+      <div class="deskpro1">
+        <p>
+          Gempita is a modern, interactive website I developed for a food store specializing in spicy tofu lava and beverages. The website features an intuitive design, responsive layout, and seamless navigation, allowing users to explore the menu and learn about the brand. This project highlights my ability to create user-friendly interfaces and attractive designs tailored to client needs.
+        </p>
+      </div>
+      <div class="buttonProject">
+        <button type="button" class="preview">
+          <a href="#view1" class="view-link">Preview <i class="fa-solid fa-eye fa-lg"></i></a>
+        </button>
+        <button type="button" class="goGit">
+          <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
+        </button>
+      </div>
+    </div>
+
+    <div class="project2">
+      <div class="projectImg2">
+        <img src="img/project2.png" alt="Project 2" />
+      </div>
+        <h1 class="textProject2">Zafari Landing Page</h1>
+      <div class="technologies2">
+        <h2 class="techhtml"><img src="img/skill/html5-original.svg" alt=""> HTML</h2>
+        <h2 class="techcss"><img src="img/skill/css3-original.svg" alt=""> CSS</h2>
+      </div>
+      <div class="deskpro2">
+        <p>
+         Zafari is an online zoo website showcasing images and videos of various animals in an engaging and educational format. The project includes a clean design and optimized performance for users across devices. This website reflects my expertise in developing visually appealing and content-rich platforms while ensuring accessibility and responsiveness.
+        </p>
+      </div>
+      <div class="buttonProject">
+        <button type="button" class="preview">
+          <a href="#view2" class="view-link">Preview <i class="fa-solid fa-eye fa-lg"></i></a>
+        </button>
+        <button type="button" class="goGit">
+          <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
+        </button>
+      </div>
+    </div>
+
+    <div class="project3">
+      <div class="projectImg3">
+        <img src="img/project3.png" alt="Project 3" />
+      </div>
+        <h1 class="textProject3">The Verge 2 Landing Page</h1>
+      <div class="technologies3">
+        <h2 class="techhtml"><img src="img/skill/html5-original.svg" alt=""> HTML</h2>
+        <h2 class="techcss"><img src="img/skill/css3-original.svg" alt=""> CSS</h2>
+      </div>
+      <div class="deskpro2">
+        <p>
+          This is a clone of The Verge's website, specifically focusing on the article "Three Iconic Spider-Men in Comic and Film History." The project demonstrates my ability to replicate professional-grade websites, paying attention to detail in layout, typography, and responsiveness. It also highlights my understanding of modern web design principles and frontend development standards.
+        </p>
+      </div>
+      <div class="buttonProject">
+        <button type="button" class="preview">
+          <a href="#view2" class="view-link">Preview <i class="fa-solid fa-eye fa-lg"></i></a>
+        </button>
+        <button type="button" class="goGit">
+          <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
+        </button>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+<!-- Project End -->
+<!-- Contact Start -->
+<section id="contact" class="contactsection">
+  <h1 class="textcontact">Contact</h1>
+  <div class="sec-contact">
+    <div class="contactform">
+      <form action="mailto:aliditia123@gmail.com" method="post" enctype="text/plain">
+        <h2>Send A Message</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-mail Address</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <h3>Reach out with any questions or collaboration ideas. I’ll respond promptly.</h3>
+
+        <button type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <div class="contactinfo">
+      <h2>Get in Touch</h2>
+      <h3 class="desk-con">Let’s build something amazing together. Whether you have a question or just want to say hello, I’m here to connect. Please use the contact details or social media links below to reach me.</h3>
+      <br>
+      <div class="container">
+      <div class="address">
+        <img src="img/location.svg" alt="Location Icon">
+        <span>
+        <h4>Address</h4>
+        <p>Bandung, Indonesia</p>
+      </span>
+      </div>
+      <div class="phonenumber">
+        <img src="img/phone.svg" alt="Phone Icon">
+        <span>
+        <h4>Phone Number</h4>
+        <p>+62-812-2174-1456</p>
+        </span>
+      </div>
+      <div class="email">
+        <img src="img/mail.svg" alt="E-mail Icon"></img>
+          <span>
+          <h4>E-mail</h4>
+          <p>aliditia123@gmail.com</p>
+        </span>
+      </div>
+    </div>
+      <br>
+      <hr>
+      <br>
+      <div class="followus">
+        <h4 class="txt-followus">Follow Us:</h4>
+        <div class="medsosicon">
+          <a href="https://wa.me/+6281221741456" target="_blank" class="wa"><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
+          <a href="https://instagram.com/rmaliditia_" target="_blank" class="ig"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
+          <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
+          <a href="https://linkedin.com/in/ReizaMohamadAliditia" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+<!-- Contact End -->
 
-    <!-- Contact End -->
-    
-    <!-- Footer Start -->
+<!-- Footer Start -->
+  <!-- Footer Start -->
 
-<footer class="footer">
+  <footer class="footer">
     <div class="sec-footer">
       <div class="footer-nav">
         <a href="#" class="home">Home</a>
         <a href="#about" class="about">About</a>
         <a href="#skills" class="skills">Skills</a>
+        <a href="#education" class="education">Education</a>
         <a href="#project" class="project">Project</a>
         <a href="#contact" class="contact-nav">Contact</a>
       </div>
@@ -382,23 +607,24 @@
       </div>
       
 </footer>
+<!-- Footer End -->
 
-    <!-- Footer End -->
-    <!-- Icon -->
-    <!-- <a href="#" id="instagramlogo"><i data-feather="instagram"></i></a>
-    <a href="#" id="githublogo"><i data-feather="github"></i></a>
-    <a href="#" id="linkedinlogo"><i data-feather="linkedin"></i></a> -->
+
+
+    
+    
+    
     <!-- Gsap utama-->
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-    
+
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init();</script>;
+    <script>
+      AOS.init();
+    </script>
 
-
-    <!-- JavaScript -->
     <script src="js/script.js"></script>
   </body>
 </html>

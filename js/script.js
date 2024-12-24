@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const navbarNav = document.getElementById("navbarNav");
-  const navLinks = navbarNav.getElementsByTagName("a");
+  const navbarMenu = document.getElementById("navbarMenu");
+  const navLinks = navbarMenu.getElementsByTagName("a");
 
   for (let i = 0; i < navLinks.length; i++) {
     navLinks[i].addEventListener("click", function () {
-      // Menghapus kelas 'active' dari semua tautan
+      // Menghapus kelas 'active' dari semua a
       for (let j = 0; j < navLinks.length; j++) {
         navLinks[j].classList.remove("active");
       }
-      // Menambahkan kelas 'active' ke tautan yang diklik
+      // Menambahkan kelas 'active' ke a yang diklik
       this.classList.add("active");
     });
   }
@@ -26,10 +26,21 @@ tl.to(".intro .intro1", {
   delay: 0.3,
 });
 
-const tl2 = gsap.timeline({ repeat: -1, repeatDelay: 0.3 });
-tl2.to(".intro .|", {
-  duration: 3,
-  opacity: 0,
-  repeat: -1,
-  yoyo: true,
+// Skills Start
+// Add this JavaScript for the toggle functionality
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleBtns = document.querySelectorAll(".toggleBtn");
+
+  toggleBtns.forEach((btn) => {
+    btn.addEventListener("click", function () {
+      // Remove active class from all buttons and sections
+      toggleBtns.forEach((b) => b.classList.remove("active"));
+      document.querySelector(".techstack").classList.remove("active");
+      document.querySelector(".tools").classList.remove("active");
+
+      // Add active class to clicked button and corresponding section
+      this.classList.add("active");
+      document.querySelector("." + this.dataset.target).classList.add("active");
+    });
+  });
 });
