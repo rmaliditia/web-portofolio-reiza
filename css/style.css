@@ -28,6 +28,8 @@ table {
   border-spacing: 0;
 }
 
+/* AOS */
+
 /* CSS Reset End */
 
 html {
@@ -417,6 +419,8 @@ nav {
   box-sizing: border-box;
   padding: 6.1% 5.5% 0 1.5%;
   height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .sectionAbout .container {
@@ -527,7 +531,8 @@ nav {
   padding: 0 2rem 0.5rem 2rem;
   font-weight: 500;
   border: 2.5px solid var(--dark-gray);
-  transition: all ease 400ms;
+  transition: transform ease 400ms;
+  transition: box-shadow ease 400ms;
   box-shadow: 0px 0px 0px 0px rgb(0, 0, 0);
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -538,22 +543,18 @@ nav {
   -moz-transition: all ease 400ms;
   -ms-transition: all ease 400ms;
   -o-transition: all ease 400ms;
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0px 1px rgb(0, 0, 0);
 }
 
 .webDevelopment {
   padding: 0 1.7rem 1rem 1.7rem;
 }
-
+/* 
 .uiuxDesign:hover,
 .webDevelopment:hover,
 .webDesign:hover {
-  transform: translate(-2px, -2px);
-  box-shadow: 2px 2px 0px 1px rgb(0, 0, 0);
-  -webkit-transform: translate(-2px, -2px);
-  -moz-transform: translate(-2px, -2px);
-  -ms-transform: translate(-2px, -2px);
-  -o-transform: translate(-2px, -2px);
-}
+} */
 
 .imDoing .uiuxDesign svg,
 .imDoing .webDevelopment svg,
@@ -581,8 +582,7 @@ nav {
 /* Skills Start */
 .sectionSkills {
   box-sizing: border-box;
-  padding: 6.1% 6% 0 6%;
-  margin-bottom: 8rem;
+  padding: 9.5% 6% 6.2% 6%;
   display: grid;
   grid-template-areas:
     "title title"
@@ -597,7 +597,7 @@ nav {
   grid-area: title;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .containerSkills {
@@ -743,13 +743,13 @@ nav {
 /* Education Start */
 .sectionEducation {
   box-sizing: border-box;
-  padding: 6.1% 5.5% 5.5% 5.5%;
+  padding: 10% 5.5% 5% 5.5%;
   display: grid;
   place-items: center;
 }
 
 .titleEducation {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
   font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
@@ -817,7 +817,7 @@ nav {
   background-color: var(--white);
   border-radius: 0.9rem;
   border: 2px solid var(--dark-gray);
-  box-shadow: 1.5px 1.5px 0 0 var(--dark-gray);
+  box-shadow: 2px 2px 0 0 var(--dark-gray);
   -webkit-border-radius: 0.9rem;
   -moz-border-radius: 0.9rem;
   -ms-border-radius: 0.9rem;
@@ -905,7 +905,7 @@ nav {
 /* Project Start */
 .sectionProject {
   box-sizing: border-box;
-  padding: 6.1% 5.5% 0 5.5%;
+  padding: 8.1% 5.5% 0 5.5%;
 }
 
 .titleProject {
@@ -920,7 +920,7 @@ nav {
   display: grid;
   grid-template-areas: "project1 project2 project3";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-rows: 500px;
   column-gap: 2rem;
 }
 
@@ -942,7 +942,7 @@ nav {
   box-shadow: 0 0 0 0 var(--dark-gray);
   -ms-border-radius: 0.9rem;
   -o-border-radius: 0.9rem;
-  transition: all 400ms ease;
+  transition: transform 400ms ease, box-shadow 400ms ease;
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -ms-transition: all 400ms ease;
@@ -1048,9 +1048,11 @@ nav {
 
 .buttonProject {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 0.3rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .preview,
@@ -1069,6 +1071,10 @@ nav {
 
 .preview {
   flex: 0 0 87%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .preview a {
@@ -1122,6 +1128,10 @@ nav {
   min-height: 100vh;
   padding: 8.3% 5.5% 5% 5.5%;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .sec-contact {
@@ -1655,6 +1665,10 @@ footer {
   /* Education End */
 
   /* Project Start */
+  .titleProject {
+    font-size: 3.3rem;
+  }
+
   .contentProject {
     display: grid;
     grid-template-areas:
@@ -1679,6 +1693,12 @@ footer {
   /* Project End */
 
   /* Contact Start */
+
+  .contactsection {
+    padding: 8.3% 5.5% 10% 5.5%;
+    min-height: auto;
+  }
+
   .contactinfo .desk-con {
     font-size: 13px;
     font-weight: 500;
@@ -1687,7 +1707,7 @@ footer {
   }
 
   .sec-contact {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
   /* Contact End */
 
@@ -1741,816 +1761,825 @@ footer {
   .footer-bottom .privacy {
     font-size: 12px;
   }
-
-  /* Footer End */
-
-  /* Laptop 1024px End */
-
-  /* Tablet 768px Start */
-  @media (max-width: 768px) {
-    html {
-      font-size: 16px;
-    }
-
-    nav {
-      padding: 1.7% 4%;
-    }
-
-    .navbarIcon {
-      justify-content: space-between;
-      gap: 0;
-      width: 100%;
-    }
-
-    .logo {
-      display: none;
-    }
-
-    /* Navbar Bottom Start */
-
-    .navbarMenu-bottom {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      position: fixed;
-      bottom: 3%;
-      left: 15%;
-      right: 15%;
-      height: 4.5rem;
-      background-color: #222428;
-      color: white;
-      z-index: 999;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      border-radius: 1rem;
-      -webkit-border-radius: 1rem;
-      -moz-border-radius: 1rem;
-      -ms-border-radius: 1rem;
-      -o-border-radius: 1rem;
-    }
-
-    .navbarMenu-bottom a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-
-    .navbarMenu-bottom a:hover {
-      color: #bda146;
-    }
-
-    .navbarMenu-bottom a.active {
-      color: var(--gold-yellow);
-    }
-
-    .navbarMenu-bottom i {
-      display: block;
-    }
-
-    /* Navbar Bottom End */
-
-    .navbarMenu {
-      display: none;
-    }
-
-    .toggle {
-      width: 3.5rem;
-      height: 3.4rem;
-    }
-
-    .icon--sun svg {
-      width: 35px;
-      height: 35px;
-    }
-
-    .contactMe {
-      padding: 0 1.1rem;
-    }
-
-    .contactMe a i {
-      font-size: 1.5rem;
-    }
-
-    .homepage {
-      padding-top: 15%;
-      height: auto;
-    }
-
-    .homepage .content-home {
-      flex-direction: column;
-      justify-content: center;
-      padding: 1.3rem 7%;
-    }
-
-    .scrollDown {
-      display: none;
-    }
-
-    .content-home .textGroup {
-      width: 41.9rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      text-align: center;
-    }
-
-    .intro {
-      font-size: 1.93rem;
-    }
-
-    .name {
-      font-size: 2.99rem;
-      margin: auto;
-    }
-
-    .name .lastSingkat {
-      display: none;
-    }
-
-    .mydesk {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      font-size: 0.98rem;
-      margin-bottom: 15px;
-    }
-
-    .downloadCv {
-      margin-bottom: 5px;
-      padding: 1.1rem 1.6rem;
-      font-size: 1.2rem;
-    }
-
-    .imgHome img {
-      width: 40rem;
-    }
-
-    /* About Start */
-    .sectionAbout {
-      padding: 11.5% 5.5% 0 5.5%;
-    }
-
-    .sectionAbout .container {
-      grid-template-areas:
-        "title"
-        "imgAbout"
-        "textAbout";
-      grid-template-columns: 1fr;
-      grid-template-rows: auto 1fr 1fr;
-    }
-
-    .container .titleAbout {
-      font-size: 1.8rem;
-      margin-left: 0;
-    }
-
-    .imageAbout img {
-      width: 36.5rem;
-    }
-
-    .textAbout {
-      padding: 0;
-      justify-content: start;
-      text-align: center;
-    }
-
-    .textAbout .hi2 {
-      font-size: 3.2rem;
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-      margin-bottom: 0.7rem;
-    }
-
-    .textAbout .intro2 {
-      font-size: 1.3rem;
-    }
-
-    .textAbout .mydesk2 {
-      margin-left: 0;
-      margin-top: 0.7rem;
-      width: 100%;
-    }
-
-    .imDoing {
-      justify-items: center;
-      grid-template-columns: repeat(3, minmax(150px, 300px));
-    }
-
-    .titleImDoing h2 {
-      font-size: 1.7rem;
-      margin-top: 1rem;
-    }
-    .uiuxDesign,
-    .webDevelopment,
-    .webDesign {
-      width: 100%;
-      padding: 0 2rem 1rem 2rem;
-    }
-
-    .webDevelopment {
-      padding: 0 0.5rem 1rem 0.5rem;
-    }
-
-    .imDoing .uiuxDesign svg,
-    .imDoing .webDevelopment svg,
-    .imDoing .webDesign svg {
-      transform: scale(0.7);
-      -webkit-transform: scale(0.7);
-      -moz-transform: scale(0.7);
-      -ms-transform: scale(0.7);
-      -o-transform: scale(0.7);
-    }
-    /* About End */
-
-    /* Skills Start */
-    .sectionSkills .titleSkills {
-      font-size: 3.3rem;
-    }
-
-    .deskSkills {
-      text-align: center;
-      padding: 1.5rem 2rem 1.5rem 2rem;
-    }
-
-    .deskSkills h2 {
-      padding-right: 0;
-      font-size: 1.7rem;
-    }
-
-    .deskSkills h3 {
-      margin-left: 0;
-    }
-
-    .techstack,
-    .tools {
-      gap: 2.64rem;
-    }
-
-    .skillIcon img {
-      width: 2rem;
-      height: 2rem;
-      object-fit: contain;
-    }
-    /* Skills End */
-    /* Education Section */
-    .sectionEducation {
-      padding: 8.3% 1.5rem 0 1.5rem;
-    }
-
-    .titleEducation {
-      margin-bottom: 3rem;
-      font-size: 3.3rem;
-    }
-
-    .contentEducation {
-      width: 100%;
-      padding-left: 2rem;
-    }
-
-    .contentEducation::after {
-      left: 1.5rem;
-      height: calc(100% - 2rem);
-    }
-
-    .contentEducation ul {
-      position: relative;
-    }
-
-    .contentEducation ul li {
-      width: calc(100% - 3rem);
-      margin-left: 3rem;
-      margin-bottom: 2.5rem !important;
-      float: none;
-      clear: both;
-      transform: none !important;
-      -webkit-transform: none !important;
-      -moz-transform: none !important;
-      -ms-transform: none !important;
-      -o-transform: none !important;
-    }
-
-    .contentEducation ul li:nth-child(odd)::after {
-      left: -0.79rem;
-      transform: translateY(-9.5rem) !important;
-      right: auto;
-      -webkit-transform: translateY(-9.5rem) !important;
-      -moz-transform: translateY(-9.5rem) !important;
-      -ms-transform: translateY(-9.5rem) !important;
-      -o-transform: translateY(-9.5rem) !important;
-    }
-
-    .contentEducation ul li:nth-child(even)::after {
-      left: -6.29rem;
-    }
-
-    .contentEducation ul li:nth-child(1) .circle {
-      left: -1.7rem !important;
-      transform: translateY(4rem) !important;
-      width: 2.5rem;
-      height: 2.5rem;
-      -webkit-transform: translateY(4rem) !important;
-      -moz-transform: translateY(4rem) !important;
-      -ms-transform: translateY(4rem) !important;
-      -o-transform: translateY(4rem) !important;
-    }
-
-    .contentEducation ul li:nth-child(2) .circle {
-      left: -1.7rem !important;
-      transform: translateY(16.5rem) !important;
-      width: 2.5rem;
-      height: 2.5rem;
-      -webkit-transform: translateY(16.5rem) !important;
-      -moz-transform: translateY(16.5rem) !important;
-      -ms-transform: translateY(16.5rem) !important;
-      -o-transform: translateY(16.5rem) !important;
-    }
-
-    .contentEducation ul li .container {
-      flex-direction: row;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .contentEducation ul li .circle i {
-      font-size: 1.2rem;
-    }
-
-    /* Education End */
-    /* Project Start */
-    .contentProject {
-      display: grid;
-      grid-template-areas:
-        "project1"
-        "project2"
-        "project3";
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      column-gap: 0rem;
-      row-gap: 2em;
-    }
-
-    .preview {
-      flex: 0 0 115.8%;
-    }
-    /* Project End */
-
-    /* Contact Start */
-    .sec-contact {
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      gap: 50px;
-    }
-
-    .contactform {
-      order: 2;
-      justify-content: center;
-    }
-
-    .contactinfo {
-      order: 1;
-      text-align: center;
-    }
-
-    .contactinfo .desk-con {
-      margin: 1rem auto 0.5rem auto;
-      width: 430px;
-      text-align: center;
-    }
-
-    .contactinfo .container {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-      justify-content: center;
-      align-items: center;
-      text-align: left;
-    }
-
-    .contactinfo .container .address,
-    .contactinfo .container .phonenumber,
-    .contactinfo .container .email {
-      margin-bottom: 0;
-    }
-    /* Contact End */
-
-    /* Footer Start */
-    footer {
-      padding: 1rem 5, 5rem;
-    }
-
-    .footer-nav {
-      display: none;
-    }
-
-    .footer-bottom {
-      margin: 0;
-    }
-    /* Footer End */
-
-    /* Tablet 768px End */
-  }
-
-  /* Mobile 425px Start */
-  @media (max-width: 426px) {
-    html {
-      font-size: 16px;
-    }
-
-    /* Navbar Bottom Start */
-
-    .navbarMenu-bottom {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      position: fixed;
-      bottom: 2%;
-      left: 5%;
-      right: 5%;
-      height: 4.5rem;
-      background-color: var(--dark-gray);
-      color: white;
-      z-index: 999;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbarMenu-bottom a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: all 0.3s ease;
-    }
-
-    .navbarMenu-bottom a:hover {
-      color: var(--gold-yellow);
-    }
-
-    .navbarMenu-bottom a.active {
-      color: var(--gold-yellow);
-    }
-
-    .navbarMenu-bottom i {
-      display: block;
-    }
-
-    /* Navbar Bottom End */
-
-    .navbarIcon {
-      justify-content: space-between;
-      gap: 0;
-      width: 100%;
-    }
-
-    .contactMe {
-      padding: 0.3rem 0.8rem 0.1rem 0.8rem;
-    }
-
-    .contactMe a span {
-      display: none;
-    }
-
-    .contactMe a i {
-      font-size: 1.2rem;
-      margin-left: 0;
-    }
-
-    .homepage {
-      min-height: fit-content;
-      padding-top: 14%;
-      align-items: start;
-    }
-
-    .homepage .content-home {
-      padding: 0 1.5%;
-    }
-
-    .content-home .textGroup {
-      width: 23rem;
-    }
-
-    .hi {
-      font-size: 1.3rem;
-    }
-
-    .name {
-      font-size: 2.5rem;
-    }
-
-    .name .lastLengkap {
-      display: none;
-    }
-
-    .name .lastSingkat {
-      display: inline-block;
-    }
-
-    .intro {
-      font-size: 1.06rem;
-      margin-top: -0.3rem;
-    }
-
-    .mydesk {
-      width: 100%;
-      font-size: 0.8rem;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .downloadCv {
-      padding: 0.9rem 1.4rem;
-      font-size: 0.8rem;
-      margin-bottom: 2rem;
-    }
-
-    .imgHome img {
-      max-width: 100%;
-      width: 22rem;
-    }
-
-    /* About Start */
-    .sectionAbout .container {
-      grid-template-rows: auto;
-      row-gap: 1.5rem;
-    }
-
-    .sectionAbout .container {
-      padding: 2% 0;
-    }
-
-    .container .titleAbout {
-      margin-bottom: 2rem;
-    }
-
-    .container .titleAbout h1 {
-      font-size: 2.4rem;
-    }
-
-    .textAbout .hi2 {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.2;
-      font-size: 1.8rem;
-      margin-bottom: 0.3rem;
-    }
-
-    .textAbout .intro2 {
-      font-size: 1rem;
-    }
-
-    .textAbout .mydesk2 {
-      font-size: 0.9rem;
-    }
-
-    .imageAbout img {
-      width: 100%;
-    }
-
-    .imDoing {
-      justify-items: center;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-    }
-
-    .uiuxDesign,
-    .webDevelopment,
-    .webDesign {
-      width: 100%;
-      padding: 0 0 1rem 0;
-    }
-
-    .imDoing .uiuxDesign svg,
-    .imDoing .webDevelopment svg,
-    .imDoing .webDesign svg {
-      transform: scale(0.9);
-      -webkit-transform: scale(0.9);
-      -moz-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-      -o-transform: scale(0.9);
-    }
-
-    .imDoing .uiuxDesign h3,
-    .imDoing .webDevelopment h3,
-    .imDoing .webDesign h3 {
-      font-size: 1.2rem;
-    }
-    /* About End */
-
-    /* Skills Start */
-    .sectionSkills {
-      padding: 15% 6% 0 6%;
-    }
-
-    .containerSkills {
-      padding: 2rem;
-    }
-
-    .sectionSkills .titleSkills {
-      font-size: 2.4rem;
-    }
-
-    .techstack,
-    .tools {
-      gap: 2.1rem;
-    }
-    /* Skills End */
-
-    /* Education Section */
-    .sectionEducation {
-      padding: 15% 1.5rem 0 1.5rem;
-    }
-
-    .titleEducation {
-      margin-bottom: 3rem;
-      font-size: 2.4rem;
-    }
-
-    .contentEducation {
-      width: 100%;
-      padding-left: 2rem;
-    }
-
-    .contentEducation::after {
-      left: 1.5rem;
-      height: calc(100% - 2rem);
-    }
-
-    .contentEducation ul {
-      position: relative;
-    }
-
-    .contentEducation ul li {
-      width: calc(100% - 3rem);
-      margin-left: 3rem;
-      margin-bottom: 2.5rem !important;
-      float: none;
-      clear: both;
-      transform: none !important;
-      -webkit-transform: none !important;
-      -moz-transform: none !important;
-      -ms-transform: none !important;
-      -o-transform: none !important;
-    }
-
-    .contentEducation ul li:nth-child(odd)::after {
-      left: -0.79rem;
-      transform: translateY(-9.5rem) !important;
-      right: auto;
-      -webkit-transform: translateY(-9.5rem) !important;
-      -moz-transform: translateY(-9.5rem) !important;
-      -ms-transform: translateY(-9.5rem) !important;
-      -o-transform: translateY(-9.5rem) !important;
-    }
-
-    .contentEducation ul li:nth-child(even)::after {
-      left: -6.27rem;
-    }
-
-    .contentEducation ul li:nth-child(1) .circle {
-      left: -1.7rem !important;
-      transform: translateY(4rem) !important;
-      width: 2.5rem;
-      height: 2.5rem;
-      -webkit-transform: translateY(4rem) !important;
-      -moz-transform: translateY(4rem) !important;
-      -ms-transform: translateY(4rem) !important;
-      -o-transform: translateY(4rem) !important;
-    }
-
-    .contentEducation ul li:nth-child(2) .circle {
-      left: -1.7rem !important;
-      transform: translateY(17.5rem) !important;
-      width: 2.5rem;
-      height: 2.5rem;
-      -webkit-transform: translateY(17.5rem) !important;
-      -moz-transform: translateY(17.5rem) !important;
-      -ms-transform: translateY(17.5rem) !important;
-      -o-transform: translateY(17.5rem) !important;
-    }
-
-    .contentEducation ul li .container {
-      flex-direction: row;
-      align-items: center;
-      gap: 0.8rem;
-    }
-
-    .contentEducation ul li .container img {
-      width: 45px !important;
-    }
-
-    .contentEducation ul li .container h4 {
-      font-size: 0.9rem;
-    }
-
-    .contentEducation ul li .container h5 {
-      font-size: 0.7rem;
-    }
-
-    .contentEducation ul li p {
-      font-size: 0.6rem;
-      line-height: 1.4;
-    }
-
-    .contentEducation ul li .circle i {
-      font-size: 1.2rem;
-    }
-    /* Education End */
-
-    /* Project Start */
-    .sectionProject {
-      box-sizing: border-box;
-      padding: 15% 5.5% 0 5.5%;
-    }
-
-    .titleProject {
-      font-size: 2.4rem;
-      grid-area: title;
-      text-align: center;
-      font-weight: 700;
-      margin-bottom: 2rem;
-    }
-
-    .contentProject {
-      display: grid;
-      grid-template-areas:
-        "project1"
-        "project2"
-        "project3";
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      row-gap: 2rem;
-    }
-
-    .preview {
-      flex: 0 0 83.5%;
-    }
-
-    .technologies1,
-    .technologies2,
-    .technologies3 {
-      gap: 1rem;
-    }
-
-    /* Project End */
-
-    /* Contact Start */
-    .contactsection {
-      padding: 12.6% 5.5% 0 5.5%;
-    }
-
-    .textcontact {
-      font-size: 2.4rem;
-    }
-
-    .contactform form {
-      width: 350px;
-    }
-
-    .sec-contact {
-      margin-top: 2rem;
-    }
-
-    .contactform {
-      margin-bottom: 4rem;
-    }
-
-    .contactinfo .desk-con {
-      margin: 1rem auto 0.5rem auto;
-      width: 380px;
-    }
-
-    .contactinfo .container {
-      flex-direction: column;
-      justify-items: center;
-      align-items: center;
-    }
-
-    .container .address,
-    .container .phonenumber,
-    .container .email {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-    /* Contact End */
-
-    /* Footer Start */
-    footer {
-      padding: 1rem 5, 5rem;
-    }
-
-    .footer-nav {
-      display: none;
-    }
-
-    .footer-bottom {
-      margin: 0;
-    }
-    /* Footer End */
-  }
-  /* Mobile 425px End */
-  /* RESPONSIVE END*/
 }
+
+/* Footer End */
+
+/* Laptop 1024px End */
+
+/* Tablet 768px Start */
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+
+  nav {
+    padding: 1.7% 4%;
+  }
+
+  .navbarIcon {
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  /* Navbar Bottom Start */
+
+  .navbarMenu-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 3%;
+    left: 15%;
+    right: 15%;
+    height: 4.5rem;
+    background-color: #222428;
+    color: white;
+    z-index: 999;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+  }
+
+  .navbarMenu-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbarMenu-bottom a:hover {
+    color: #bda146;
+  }
+
+  .navbarMenu-bottom a.active {
+    color: var(--gold-yellow);
+  }
+
+  .navbarMenu-bottom i {
+    display: block;
+  }
+
+  /* Navbar Bottom End */
+
+  .navbarMenu {
+    display: none;
+  }
+
+  .toggle {
+    width: 3.5rem;
+    height: 3.4rem;
+  }
+
+  .icon--sun svg {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contactMe {
+    padding: 0 1.1rem;
+  }
+
+  .contactMe a i {
+    font-size: 1.5rem;
+  }
+
+  .homepage {
+    padding-top: 15%;
+    height: auto;
+  }
+
+  .homepage .content-home {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.3rem 7%;
+  }
+
+  .scrollDown {
+    display: none;
+  }
+
+  .content-home .textGroup {
+    width: 41.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .intro {
+    font-size: 1.93rem;
+  }
+
+  .name {
+    font-size: 2.99rem;
+    margin: auto;
+  }
+
+  .name .lastSingkat {
+    display: none;
+  }
+
+  .mydesk {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.98rem;
+    margin-bottom: 15px;
+  }
+
+  .downloadCv {
+    margin-bottom: 5px;
+    padding: 1.1rem 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .imgHome img {
+    width: 40rem;
+  }
+
+  /* About Start */
+  .sectionAbout {
+    padding: 11.5% 5.5% 0 5.5%;
+  }
+
+  .sectionAbout .container {
+    grid-template-areas:
+      "title"
+      "imgAbout"
+      "textAbout";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+  }
+
+  .container .titleAbout {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .imageAbout img {
+    width: 36.5rem;
+  }
+
+  .textAbout {
+    padding: 0;
+    justify-content: start;
+    text-align: center;
+  }
+
+  .textAbout .hi2 {
+    font-size: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    margin-bottom: 0.7rem;
+  }
+
+  .textAbout .intro2 {
+    font-size: 1.3rem;
+  }
+
+  .textAbout .mydesk2 {
+    margin-left: 0;
+    margin-top: 0.7rem;
+    width: 100%;
+  }
+
+  .imDoing {
+    justify-items: center;
+    grid-template-columns: repeat(3, minmax(150px, 300px));
+  }
+
+  .titleImDoing h2 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+  }
+  .uiuxDesign,
+  .webDevelopment,
+  .webDesign {
+    width: 100%;
+    padding: 0 2rem 1rem 2rem;
+  }
+
+  .webDevelopment {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+  .imDoing .uiuxDesign svg,
+  .imDoing .webDevelopment svg,
+  .imDoing .webDesign svg {
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+    -moz-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+  }
+  /* About End */
+
+  /* Skills Start */
+  .sectionSkills .titleSkills {
+    font-size: 3.3rem;
+  }
+
+  .deskSkills {
+    text-align: center;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+  }
+
+  .deskSkills h2 {
+    padding-right: 0;
+    font-size: 1.7rem;
+  }
+
+  .deskSkills h3 {
+    margin-left: 0;
+  }
+
+  .techstack,
+  .tools {
+    gap: 2.64rem;
+  }
+
+  .skillIcon img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+  }
+  /* Skills End */
+  /* Education Section */
+  .sectionEducation {
+    padding: 8.3% 1.5rem 0 1.5rem;
+  }
+
+  .titleEducation {
+    margin-bottom: 3rem;
+    font-size: 3.3rem;
+  }
+
+  .contentEducation {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .contentEducation::after {
+    left: 1.5rem;
+    height: calc(100% - 2rem);
+  }
+
+  .contentEducation ul {
+    position: relative;
+  }
+
+  .contentEducation ul li {
+    width: calc(100% - 3rem);
+    margin-left: 3rem;
+    margin-bottom: 2.5rem !important;
+    float: none;
+    clear: both;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+  }
+
+  .contentEducation ul li:nth-child(odd)::after {
+    left: -0.79rem;
+    transform: translateY(-9.5rem) !important;
+    right: auto;
+    -webkit-transform: translateY(-9.5rem) !important;
+    -moz-transform: translateY(-9.5rem) !important;
+    -ms-transform: translateY(-9.5rem) !important;
+    -o-transform: translateY(-9.5rem) !important;
+  }
+
+  .contentEducation ul li:nth-child(even)::after {
+    left: -6.29rem;
+  }
+
+  .contentEducation ul li:nth-child(1) .circle {
+    left: -1.7rem !important;
+    transform: translateY(4rem) !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    -webkit-transform: translateY(4rem) !important;
+    -moz-transform: translateY(4rem) !important;
+    -ms-transform: translateY(4rem) !important;
+    -o-transform: translateY(4rem) !important;
+  }
+
+  .contentEducation ul li:nth-child(2) .circle {
+    left: -1.7rem !important;
+    transform: translateY(16.5rem) !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    -webkit-transform: translateY(16.5rem) !important;
+    -moz-transform: translateY(16.5rem) !important;
+    -ms-transform: translateY(16.5rem) !important;
+    -o-transform: translateY(16.5rem) !important;
+  }
+
+  .contentEducation ul li .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .contentEducation ul li .circle i {
+    font-size: 1.2rem;
+  }
+
+  /* Education End */
+  /* Project Start */
+  .contentProject {
+    display: grid;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0rem;
+    row-gap: 2em;
+  }
+
+  /* Project End */
+
+  /* Contact Start */
+  .sec-contact {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .contactform {
+    order: 2;
+    justify-content: center;
+  }
+
+  .contactinfo {
+    order: 1;
+    text-align: center;
+  }
+
+  .contactinfo .desk-con {
+    margin: 1rem auto 0.5rem auto;
+    width: 430px;
+    text-align: center;
+  }
+
+  .contactinfo .container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+  }
+
+  .contactinfo .container .address,
+  .contactinfo .container .phonenumber,
+  .contactinfo .container .email {
+    margin-bottom: 0;
+  }
+  /* Contact End */
+
+  /* Footer Start */
+  footer {
+    padding: 1rem 5.5rem 10rem 5.5rem;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-bottom {
+    margin: 0;
+  }
+}
+/* Footer End */
+
+/* Tablet 768px End */
+
+/* Mobile 425px Start */
+@media (max-width: 426px) {
+  html {
+    font-size: 16px;
+  }
+
+  /* Navbar Bottom Start */
+
+  .navbarMenu-bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+    right: 5%;
+    height: 4.5rem;
+    background-color: var(--dark-gray);
+    color: white;
+    z-index: 999;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbarMenu-bottom a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbarMenu-bottom a:hover {
+    color: var(--gold-yellow);
+  }
+
+  .navbarMenu-bottom a.active {
+    color: var(--gold-yellow);
+  }
+
+  .navbarMenu-bottom i {
+    display: block;
+    font-size: 1rem;
+  }
+
+  /* Navbar Bottom End */
+
+  .navbarIcon {
+    justify-content: space-between;
+    gap: 0;
+    width: 100%;
+  }
+
+  .contactMe {
+    padding: 0.3rem 0.8rem 0.1rem 0.8rem;
+  }
+
+  .contactMe a span {
+    display: none;
+  }
+
+  .contactMe a i {
+    font-size: 1.2rem;
+    margin-left: 0;
+  }
+
+  .homepage {
+    min-height: fit-content;
+    padding-top: 14%;
+    align-items: start;
+  }
+
+  .homepage .content-home {
+    padding: 0 1.5%;
+  }
+
+  .content-home .textGroup {
+    width: 23rem;
+  }
+
+  .hi {
+    font-size: 1.3rem;
+  }
+
+  .name {
+    font-size: 2.5rem;
+  }
+
+  .name .lastLengkap {
+    display: none;
+  }
+
+  .name .lastSingkat {
+    display: inline-block;
+  }
+
+  .intro {
+    font-size: 1.06rem;
+    margin-top: -0.3rem;
+  }
+
+  .mydesk {
+    width: 100%;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .downloadCv {
+    padding: 0.9rem 1.4rem;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .imgHome img {
+    max-width: 100%;
+    width: 22rem;
+  }
+
+  /* About Start */
+  .sectionAbout .container {
+    grid-template-rows: auto;
+    row-gap: 1.5rem;
+  }
+
+  .sectionAbout .container {
+    padding: 2% 0;
+  }
+
+  .container .titleAbout {
+    margin-bottom: 2rem;
+  }
+
+  .container .titleAbout h1 {
+    font-size: 2.4rem;
+  }
+
+  .textAbout .hi2 {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    font-size: 1.8rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .textAbout .intro2 {
+    font-size: 1rem;
+  }
+
+  .textAbout .mydesk2 {
+    font-size: 0.9rem;
+  }
+
+  .imageAbout img {
+    width: 100%;
+  }
+
+  .imDoing {
+    justify-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .uiuxDesign,
+  .webDevelopment,
+  .webDesign {
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  .imDoing .uiuxDesign svg,
+  .imDoing .webDevelopment svg,
+  .imDoing .webDesign svg {
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+  }
+
+  .imDoing .uiuxDesign h3,
+  .imDoing .webDevelopment h3,
+  .imDoing .webDesign h3 {
+    font-size: 1.2rem;
+  }
+  /* About End */
+
+  /* Skills Start */
+  .sectionSkills {
+    padding: 15% 6% 0 6%;
+  }
+
+  .titleSkills {
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+
+  .containerSkills {
+    padding: 2rem;
+  }
+
+  .sectionSkills .titleSkills {
+    font-size: 2.4rem;
+  }
+
+  .techstack,
+  .tools {
+    gap: 2.1rem;
+  }
+  /* Skills End */
+
+  /* Education Section */
+  .sectionEducation {
+    padding: 15% 1.5rem 0 1.5rem;
+  }
+
+  .titleEducation {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+  }
+
+  .contentEducation {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  .contentEducation::after {
+    left: 1.5rem;
+    height: calc(100% - 2rem);
+  }
+
+  .contentEducation ul {
+    position: relative;
+  }
+
+  .contentEducation ul li {
+    width: calc(100% - 3rem);
+    margin-left: 3rem;
+    margin-bottom: 2.5rem !important;
+    float: none;
+    clear: both;
+    transform: none !important;
+    -webkit-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -o-transform: none !important;
+  }
+
+  .contentEducation ul li:nth-child(odd)::after {
+    left: -0.79rem;
+    transform: translateY(-9.5rem) !important;
+    right: auto;
+    -webkit-transform: translateY(-9.5rem) !important;
+    -moz-transform: translateY(-9.5rem) !important;
+    -ms-transform: translateY(-9.5rem) !important;
+    -o-transform: translateY(-9.5rem) !important;
+  }
+
+  .contentEducation ul li:nth-child(even)::after {
+    left: -6.27rem;
+  }
+
+  .contentEducation ul li:nth-child(1) .circle {
+    left: -1.7rem !important;
+    transform: translateY(4rem) !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    -webkit-transform: translateY(4rem) !important;
+    -moz-transform: translateY(4rem) !important;
+    -ms-transform: translateY(4rem) !important;
+    -o-transform: translateY(4rem) !important;
+  }
+
+  .contentEducation ul li:nth-child(2) .circle {
+    left: -1.7rem !important;
+    transform: translateY(17.5rem) !important;
+    width: 2.5rem;
+    height: 2.5rem;
+    -webkit-transform: translateY(17.5rem) !important;
+    -moz-transform: translateY(17.5rem) !important;
+    -ms-transform: translateY(17.5rem) !important;
+    -o-transform: translateY(17.5rem) !important;
+  }
+
+  .contentEducation ul li .container {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .contentEducation ul li .container img {
+    width: 45px !important;
+  }
+
+  .contentEducation ul li .container h4 {
+    font-size: 0.9rem;
+  }
+
+  .contentEducation ul li .container h5 {
+    font-size: 0.7rem;
+  }
+
+  .contentEducation ul li p {
+    font-size: 0.6rem;
+    line-height: 1.4;
+  }
+
+  .contentEducation ul li .circle i {
+    font-size: 1.2rem;
+  }
+  /* Education End */
+
+  /* Project Start */
+  .sectionProject {
+    box-sizing: border-box;
+    padding: 15% 5.5% 0 5.5%;
+  }
+
+  .titleProject {
+    font-size: 2.4rem;
+    grid-area: title;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .contentProject {
+    display: grid;
+    grid-template-areas:
+      "project1"
+      "project2"
+      "project3";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+  }
+
+  .preview {
+    flex: 0 0 83.5%;
+  }
+
+  .technologies1,
+  .technologies2,
+  .technologies3 {
+    gap: 1rem;
+  }
+
+  /* Project End */
+
+  /* Contact Start */
+  .contactsection {
+    padding: 12.6% 5.5% 0 5.5%;
+  }
+
+  .textcontact {
+    font-size: 2.4rem;
+  }
+
+  .contactform form {
+    width: 350px;
+  }
+
+  .sec-contact {
+    margin-top: 2rem;
+  }
+
+  .contactform {
+    margin-bottom: 4rem;
+  }
+
+  .contactinfo .desk-con {
+    margin: 1rem auto 0.5rem auto;
+    width: 380px;
+  }
+
+  .contactinfo .container {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .container .address,
+  .container .phonenumber,
+  .container .email {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  /* Contact End */
+
+  /* Footer Start */
+  footer {
+    padding: 1rem 1rem 8rem 1rem;
+    box-sizing: border-box;
+  }
+
+  .footer-bottom .privacy,
+  .footer-bottom .by {
+    font-size: 11px;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+
+  .footer-bottom {
+    margin: 0;
+  }
+  /* Footer End */
+}
+/* Mobile 425px End */
+/* RESPONSIVE END*/
