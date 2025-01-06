@@ -1,17 +1,13 @@
 // Navigation Top
-document.addEventListener("DOMContentLoaded", function () {
-  const navbarMenu = document.getElementById("navbarMenu");
-  const navLinks = navbarMenu.getElementsByTagName("a");
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.getElementById("navbarMenu").querySelectorAll("a");
 
-  for (let i = 0; i < navLinks.length; i++) {
-    navLinks[i].addEventListener("click", function () {
-      for (let j = 0; j < navLinks.length; j++) {
-        navLinks[j].classList.remove("active");
-      }
-
-      this.classList.add("active");
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+      links.forEach((el) => el.classList.remove("active"));
+      e.target.classList.add("active");
     });
-  }
+  });
 });
 
 // Navigation Bottom
