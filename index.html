@@ -538,7 +538,8 @@
   <h1 class="textcontact" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-offset="150" data-aos-once="true">Contact</h1>
   <div class="sec-contact">
     <div class="contactform" data-aos="fade-right" data-aos-delay="600" data-aos-duration="1200" data-aos-anchor-placement="top-bottom" data-aos-offset="150" data-aos-once="true">
-      <form action="mailto:aliditia123@gmail.com" method="post" enctype="text/plain">
+      <form action="https://api.web3forms.com/submit" method="POST" enctype="text/plain">
+        <input type="hidden" name="access_key" value="59882dd7-410a-48b1-9117-3292b97aacdb">
         <h2>Send A Message</h2>
         <label for="name">Name</label>
         <input type="text" id="name" name="name" required>
@@ -591,7 +592,7 @@
           <a href="https://wa.me/+6281221741456" target="_blank" class="wa"><i class="fa-brands fa-square-whatsapp fa-2x"></i></a>
           <a href="https://instagram.com/rmaliditia_" target="_blank" class="ig"><i class="fa-brands fa-square-instagram fa-2x"></i></a>
           <a href="https://github.com/rmaliditia" target="_blank" class="git"><i class="fa-brands fa-square-github fa-2x"></i></a>
-          <a href="https://linkedin.com/in/ReizaMohamadAliditia" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+          <a href="www.linkedin.com/in/reiza-mohamad-aliditia-1a523233b" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin fa-2x"></i></a>
         </div>
       </div>
     </div>
@@ -618,10 +619,6 @@
       
 </footer>
 <!-- Footer End -->
-
-
-
-    
     
     
     <!-- Gsap utama-->
@@ -636,5 +633,18 @@
     </script>
 
     <script src="js/script.js"></script>
+  
+    <!-- Form Contact -->
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbynb32v0Rc3n9ffHL7_JP5SbS_v9IY7441YQ6W9u0hUJemhnK-0J7O4t9fwOOaBpH08/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
