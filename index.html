@@ -635,18 +635,6 @@
     </script>
 
     <script src="js/script.js"></script>
-  
-    <!-- Form Contact -->
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbynb32v0Rc3n9ffHL7_JP5SbS_v9IY7441YQ6W9u0hUJemhnK-0J7O4t9fwOOaBpH08/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+
   </body>
 </html>

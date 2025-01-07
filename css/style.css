@@ -42,6 +42,7 @@ body {
   background-color: var(--white);
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Navigation Start */
@@ -1000,7 +1001,7 @@ nav {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
+  object-position: top;
 }
 
 .textProject1,
@@ -2174,6 +2175,22 @@ footer {
 
 /* Tablet 768px End */
 
+/* Mobile 576px Start */
+@media (max-width: 576px) {
+  .uiuxDesign,
+  .webDevelopment,
+  .webDesign {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+
+  .techstack,
+  .tools {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+/* Mobile 576px End */
+
 /* Mobile 425px Start */
 @media (max-width: 426px) {
   html {
@@ -2377,10 +2394,6 @@ footer {
     font-size: 2.4rem;
   }
 
-  .techstack,
-  .tools {
-    gap: 2.1rem;
-  }
   /* Skills End */
 
   /* Education Section */
